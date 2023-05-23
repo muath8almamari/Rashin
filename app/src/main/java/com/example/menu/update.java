@@ -1,5 +1,6 @@
 package com.example.menu;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -25,6 +26,7 @@ public class update extends AppCompatActivity {
         objQuantity = findViewById(R.id.obj_quantity_update);
         update = findViewById(R.id.update);
 
+
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +41,10 @@ public class update extends AppCompatActivity {
             }
         });
         getIntentData();
+        ActionBar ab = getSupportActionBar();
+        if (ab != null) {
+            ab.setTitle(name);
+        }
 
 
     }
