@@ -60,6 +60,19 @@ public class DbHelperList extends SQLiteOpenHelper {
         cv.put(object_quantity,quantity);
         long result =db.update(table_name,cv,"_id=?",new String[]{row});
 
+    }
+    void deleteOneRow(String row_id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        long result = db.delete(table_name, "_id=?", new String[]{row_id});
+//        if(result == -1){
+//            Toast.makeText(context, "Failed to Delete.", Toast.LENGTH_SHORT).show();
+//        }else{
+//            Toast.makeText(context, "Successfully Deleted.", Toast.LENGTH_SHORT).show();
+//        }
+    }
 
+    void deleteAllData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + table_name);
     }
 }

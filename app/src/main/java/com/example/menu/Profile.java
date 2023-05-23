@@ -42,4 +42,31 @@ public class Profile extends AppCompatActivity {
             return false;
         });
     }
+
+//        // Assuming you have an instance of your database helper class
+//        DbHelperList dbHelper = new DbHelperList(context);
+//
+//// Call the readAllData() method to retrieve the cursor
+//        Cursor cursor = dbHelper.readAllData();
+//
+//// Iterate over the cursor to access the retrieved data
+//        if (cursor != null && cursor.moveToFirst()) {
+//            do {
+//                // Extract data from the cursor based on column indices
+//                int id = cursor.getInt(cursor.getColumnIndex("id"));
+//                String name = cursor.getString(cursor.getColumnIndex("name"));
+//                int price = cursor.getInt(cursor.getColumnIndex("price"));
+//
+//                // Do something with the retrieved data
+//                // ...
+//
+//            } while (cursor.moveToNext());
+//        }
+//
+//// Close the cursor to release resources
+//        if (cursor != null) {
+//            cursor.close();
+//        }
+//
+//    }
 }
