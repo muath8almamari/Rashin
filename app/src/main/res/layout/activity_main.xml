@@ -8,13 +8,48 @@
     android:background="@color/back_black">
 
     <TextView
-        android:id="@+id/home_txt"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="homekkkk"
-        android:textSize="36sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/blue_sky"/>
+        android:id="@+id/time"
+        android:layout_marginTop="200dp"
+        android:text="00 : 00 AM"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="46dp"/>
+
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginHorizontal="26dp"
+        android:text="Select Time"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:layout_below="@+id/time"/>
+
+    <Button
+        android:id="@+id/setAlarmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="26dp"
+        android:text="Set Alarm"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:layout_below="@+id/select"/>
+
+    <Button
+        android:id="@+id/cancelAlarmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="26dp"
+        android:text="Cancel Alarm"
+        android:textColor="@color/black"
+        android:layout_below="@+id/setAlarmBtn"
+        android:textSize="26dp"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"

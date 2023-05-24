@@ -59,9 +59,9 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         myMap = googleMap;
-        LatLng sydeny = new LatLng(24.361443,56.710881);
-        myMap.addMarker(new MarkerOptions().position(sydeny).title("Sydney"));
-        myMap.moveCamera(CameraUpdateFactory.newLatLng(sydeny));
+        LatLng market = new LatLng(24.361443,56.710881);
+        myMap.addMarker(new MarkerOptions().position(market).title("Best Market"));
+        myMap.moveCamera(CameraUpdateFactory.newLatLng(market));
 
     }
 }

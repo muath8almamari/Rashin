@@ -39,4 +39,16 @@ public class Adding extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(this, "you didnt submit your data", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(this, "wellcom back", Toast.LENGTH_SHORT).show();
+    }
 }
